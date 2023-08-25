@@ -1,22 +1,21 @@
-/*  your css code here. If applicable */
 #container {
     margin: 20px;
-/*     position: relative; */
-    padding: 20px;
-/*     background-color: #f5f5f5;
-    border: 1px solid #ccc; */
+	content:"This is the main Container element";
 }
 
-#container::before {
-    content: "Before Element";
-/*     display: block; */
+#container:before,
+#container:after {
     color: #f00;
     font-size: 20px;
 }
 
-#container::after {
-    content: "After Element";
-/*     display: block; */
-    color: #f00;
-    font-size: 20px;
+#container:before {
+    content: "Before Element";
+    left: 0;
 }
+
+#container:after {
+    content: "After Element";
+    right: 0;
+}
+

@@ -1,25 +1,20 @@
 #container {
     margin: 20px;
-    position: relative;
 }
 
 #container:before,
 #container:after {
-    content: "Special Text";
     color: #f00;
     font-size: 20px;
-    position: absolute;
 }
 
 #container:before {
-    content: "Special Text Before";
-    top: -30px;
+    content: "Before Element";
     left: 0;
 }
 
 #container:after {
-    content: "Special Text After";
-    bottom: -30px;
+    content: "After Element";
     right: 0;
 }
 
